@@ -892,6 +892,7 @@ footer .wrapper:after {
 
     #contactpage-container {
         margin-top: 100px;
+        margin-bottom: 30px;
     }
 
     .contactpage-header {
@@ -1048,9 +1049,15 @@ footer .wrapper:after {
     }
 
     .localization-text-link {
-        color: #2B79EB;
-        text-decoration: none;
+        width: 30%;
         margin-bottom: 30px;
+        padding: 4px;
+        border: 1px solid #2B79EB;
+        border-radius: 4px;
+        text-decoration: none;
+        color: #2B79EB;
+        background-color: transparent;
+        text-align: center;
     }
 
     .localization-text-link:hover {
@@ -1148,6 +1155,55 @@ footer .wrapper:after {
 
     #companyinfo-container .job-type {
         right: 0;
+    }
+
+    /* contactpage  */
+    .contactpage-header-title p {
+        display: none;
+    }
+    .add-number {
+        display: block;
+    }
+    .contactpage-form {
+        grid-template-columns: 1fr;
+        gap: 3%;
+    }
+
+    .form-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #localization {
+        margin-top: 0;
+        margin-bottom: 125px;
+    }
+
+    #localization ul {
+        margin: 30px auto 0;
+        gap: 0;
+    }
+
+    #localization ul li {
+        padding: 8px;
+    }
+
+    .localization-text {
+        text-align: center;
+        margin: 0;
+    }
+
+    .localization-text h4 {
+        font-size: 18px;
+    }
+    .localization-text-adress {
+        font-size: 14px;
+    }
+
+    .localization-text-link {
+        margin: 0 auto 30px;
+        width: 40%;
     }
 
 }
