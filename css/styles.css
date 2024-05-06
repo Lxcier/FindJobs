@@ -295,6 +295,18 @@ nav:after {
     background-size: cover;
     background-position: 0 25%;
     padding: 15em 0;
+    position: relative;
+}
+
+#sendjobs-container::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .2;
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
 #sendjobs-container h2, #sendjobs-container p {
@@ -1254,7 +1266,7 @@ footer .wrapper:after {
 
 }
 
-@media screen and (min-width: 374px) and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
     
     .nav-container .btn-menumobile {
         display: block !important;
@@ -1393,6 +1405,20 @@ footer .wrapper:after {
         margin-bottom: 1em;
     }
 
+    #blog-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-center {
+        width: 100%;
+    }
+
+    .article-box {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
     .footer-box {
         display: block;
         width: 100%;
@@ -1449,6 +1475,11 @@ footer .wrapper:after {
 
     #apply-btn {
         margin-bottom: 3em;
+    }
+
+    /* contact page */
+    #contactpage-container {
+        margin-top: 65px;
     }
 }
 
